@@ -556,6 +556,9 @@ input::-ms-input-placeholder {
 input::placeholder {
   color: #333333;
 }
+input:focus {
+  border-color: #58A3C9;
+}
 
 textarea {
   resize: none;
@@ -569,6 +572,12 @@ textarea {
   border: 1px solid #333333;
   border-radius: 4px;
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 650px) {
+  textarea {
+    padding: 3.889vw 5.278vw;
+    font-size: 5vw;
+  }
 }
 textarea:last-child {
   margin-bottom: 0;
@@ -587,6 +596,9 @@ textarea::-ms-input-placeholder {
 }
 textarea::placeholder {
   color: #333333;
+}
+textarea:focus {
+  border-color: #58A3C9;
 }
 
 .checkbox {
@@ -652,144 +664,6 @@ textarea::placeholder {
   background: #58A3C9;
   -webkit-transform: scale(0);
   transform: scale(0);
-}
-
-.buy__title {
-  margin-bottom: 23px;
-  font-family: "Bebas Neue Cyrillic";
-  font-size: 90px;
-  line-height: 80px;
-  text-align: center;
-  color: #FF6A80;
-}
-@media only screen and (max-width: 1440px) {
-  .buy__title {
-    margin-bottom: 1.597vw;
-    font-size: 6.25vw;
-    line-height: 5.556vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .buy__title {
-    font-size: 14.722vw;
-    line-height: 22.222vw;
-    margin-bottom: 0;
-  }
-}
-.buy__text {
-  font-family: "Circe";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 35px;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 23px;
-}
-@media only screen and (max-width: 1440px) {
-  .buy__text {
-    font-size: 2.222vw;
-    line-height: 2.431vw;
-    margin-bottom: 1.597vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .buy__text {
-    font-size: 5.833vw;
-    line-height: 6.944vw;
-    margin-bottom: 10vw;
-  }
-}
-.buy__container {
-  background: #F0F0F0;
-  padding-top: 33px;
-  padding-bottom: 29px;
-}
-@media only screen and (max-width: 1440px) {
-  .buy__container {
-    padding-top: 2.292vw;
-    padding-bottom: 2.014vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .buy__container {
-    padding-top: 9.167vw;
-    padding-bottom: 7.778vw;
-  }
-}
-.buy__container .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.buy__partners {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  margin-bottom: 46px;
-}
-@media only screen and (max-width: 1440px) {
-  .buy__partners {
-    margin-bottom: 3.194vw;
-  }
-  .buy__partners img {
-    width: 11.667vw;
-    height: 3.333vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .buy__partners {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .buy__partners img {
-    width: 41.667vw;
-    height: 11.667vw;
-    margin-bottom: 2.778vw;
-  }
-}
-.buy__button {
-  padding: 17px 38px;
-  border: 1px solid #333333;
-  border-radius: 4px;
-  font-family: "IBM Plex Sans";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-  text-transform: uppercase;
-  color: #333333;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-}
-@media only screen and (max-width: 1440px) {
-  .buy__button {
-    padding: 1.181vw 2.639vw;
-    font-size: 1.25vw;
-    line-height: 1.736vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .buy__button {
-    padding: 4.722vw 10.556vw;
-    font-size: 4.444vw;
-    line-height: 6.111vw;
-  }
-}
-.buy__button:hover {
-  background: #333;
-  color: #fff;
 }
 
 .banner {
@@ -979,7 +853,7 @@ textarea::placeholder {
 
 .button {
   padding: 19px 52px;
-  background: #00ff00;
+  background: #14B838;
   -ms-flex-item-align: baseline;
       align-self: baseline;
   font-family: "Circe";
@@ -1006,7 +880,145 @@ textarea::placeholder {
   }
 }
 .button:hover {
-  background: #00e600;
+  background: #12a131;
+}
+
+.buy__title {
+  margin-bottom: 23px;
+  font-family: "Bebas Neue Cyrillic";
+  font-size: 90px;
+  line-height: 80px;
+  text-align: center;
+  color: #FF6A80;
+}
+@media only screen and (max-width: 1440px) {
+  .buy__title {
+    margin-bottom: 1.597vw;
+    font-size: 6.25vw;
+    line-height: 5.556vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .buy__title {
+    font-size: 14.722vw;
+    line-height: 22.222vw;
+    margin-bottom: 0;
+  }
+}
+.buy__text {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 23px;
+}
+@media only screen and (max-width: 1440px) {
+  .buy__text {
+    font-size: 2.222vw;
+    line-height: 2.431vw;
+    margin-bottom: 1.597vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .buy__text {
+    font-size: 5.833vw;
+    line-height: 6.944vw;
+    margin-bottom: 10vw;
+  }
+}
+.buy__container {
+  background: #F0F0F0;
+  padding-top: 33px;
+  padding-bottom: 29px;
+}
+@media only screen and (max-width: 1440px) {
+  .buy__container {
+    padding-top: 2.292vw;
+    padding-bottom: 2.014vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .buy__container {
+    padding-top: 9.167vw;
+    padding-bottom: 7.778vw;
+  }
+}
+.buy__container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.buy__partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 46px;
+}
+@media only screen and (max-width: 1440px) {
+  .buy__partners {
+    margin-bottom: 3.194vw;
+  }
+  .buy__partners img {
+    width: 11.667vw;
+    height: 3.333vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .buy__partners {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .buy__partners img {
+    width: 41.667vw;
+    height: 11.667vw;
+    margin-bottom: 2.778vw;
+  }
+}
+.buy__button {
+  padding: 17px 38px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1440px) {
+  .buy__button {
+    padding: 1.181vw 2.639vw;
+    font-size: 1.25vw;
+    line-height: 1.736vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .buy__button {
+    padding: 4.722vw 10.556vw;
+    font-size: 4.444vw;
+    line-height: 6.111vw;
+  }
+}
+.buy__button:hover {
+  background: #333;
+  color: #fff;
 }
 
 .footer {
@@ -1171,7 +1183,7 @@ textarea::placeholder {
 .header__button {
   display: none;
   padding: 12px 34px;
-  background: #00ff00;
+  background: #14B838;
   font-family: "Circe";
   font-style: normal;
   font-weight: bold;
@@ -1192,7 +1204,7 @@ textarea::placeholder {
   }
 }
 .header__button:hover {
-  background: #00e600;
+  background: #12a131;
 }
 @media only screen and (max-width: 650px) {
   .header__button {
@@ -1215,10 +1227,12 @@ textarea::placeholder {
   padding-left: 30px;
   font-family: "Circe";
   font-weight: 300;
+  padding-top: 9px;
 }
 @media only screen and (max-width: 1440px) {
   .header__links {
     padding-left: 2.083vw;
+    padding-top: 0.625vw;
   }
 }
 .header__links > * {
@@ -1318,7 +1332,7 @@ textarea::placeholder {
   line-height: 140%;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: #58A3C9;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-bottom: 20px;
@@ -1347,6 +1361,16 @@ textarea::placeholder {
   -ms-flex-item-align: center;
       align-self: center;
   margin-top: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.popup__button[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.popup__button:hover {
+  background: #4598c3;
 }
 @media only screen and (max-width: 650px) {
   .popup__button {
@@ -1422,7 +1446,7 @@ textarea::placeholder {
 .popup__body::-webkit-scrollbar-thumb {
   /* 5 - ползунок */
   border-radius: 2px;
-  background-color: #000;
+  background-color: #58A3C9;
 }
 .popup__body > * {
   -ms-flex-negative: 0;
@@ -2084,4 +2108,3 @@ textarea::placeholder {
 .steps__arrow.hidden {
   opacity: 0;
 }
-/*# sourceMappingURL=main.css.map */
