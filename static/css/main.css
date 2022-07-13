@@ -719,6 +719,8 @@ textarea:focus {
 }
 .banner__bg img {
   display: block;
+  width: 1099px;
+  height: 732px;
 }
 @media only screen and (max-width: 1440px) {
   .banner__bg img {
@@ -1548,9 +1550,6 @@ textarea:focus {
   color: #FF6A80;
   margin-bottom: 60px;
 }
-.privilege__title.mobile {
-  display: none;
-}
 @media only screen and (max-width: 1440px) {
   .privilege__title {
     font-size: 6.25vw;
@@ -1563,12 +1562,6 @@ textarea:focus {
     font-size: 14.722vw;
     line-height: 20.556vw;
     margin-bottom: 3.056vw;
-  }
-  .privilege__title.mobile {
-    display: block;
-  }
-  .privilege__title.desc {
-    display: none;
   }
 }
 .privilege__title span {
