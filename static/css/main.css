@@ -705,6 +705,17 @@ textarea:focus {
   bottom: -43px;
   z-index: -1;
 }
+@media only screen and (min-width: 1921px) {
+  .banner__bg {
+    right: calc((100vw - 1200px) / -2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .banner__bg {
     left: 34.306vw;
@@ -1045,6 +1056,10 @@ textarea:focus {
   font-size: 14px;
   line-height: 19px;
   color: #1F1F39;
+}
+.footer__copyright * {
+  color: #000;
+  text-decoration: none;
 }
 @media only screen and (max-width: 1440px) {
   .footer__copyright {
