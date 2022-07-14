@@ -666,144 +666,6 @@ textarea:focus {
   transform: scale(0);
 }
 
-.buy__title {
-  margin-bottom: 23px;
-  font-family: "Bebas Neue Cyrillic";
-  font-size: 90px;
-  line-height: 80px;
-  text-align: center;
-  color: #FF6A80;
-}
-@media only screen and (max-width: 1440px) {
-  .buy__title {
-    margin-bottom: 1.597vw;
-    font-size: 6.25vw;
-    line-height: 5.556vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .buy__title {
-    font-size: 14.722vw;
-    line-height: 22.222vw;
-    margin-bottom: 0;
-  }
-}
-.buy__text {
-  font-family: "Circe";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 35px;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 23px;
-}
-@media only screen and (max-width: 1440px) {
-  .buy__text {
-    font-size: 2.222vw;
-    line-height: 2.431vw;
-    margin-bottom: 1.597vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .buy__text {
-    font-size: 5.833vw;
-    line-height: 6.944vw;
-    margin-bottom: 10vw;
-  }
-}
-.buy__container {
-  background: #F0F0F0;
-  padding-top: 33px;
-  padding-bottom: 29px;
-}
-@media only screen and (max-width: 1440px) {
-  .buy__container {
-    padding-top: 2.292vw;
-    padding-bottom: 2.014vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .buy__container {
-    padding-top: 9.167vw;
-    padding-bottom: 7.778vw;
-  }
-}
-.buy__container .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.buy__partners {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  margin-bottom: 46px;
-}
-@media only screen and (max-width: 1440px) {
-  .buy__partners {
-    margin-bottom: 3.194vw;
-  }
-  .buy__partners img {
-    width: 11.667vw;
-    height: 3.333vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .buy__partners {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .buy__partners img {
-    width: 41.667vw;
-    height: 11.667vw;
-    margin-bottom: 2.778vw;
-  }
-}
-.buy__button {
-  padding: 17px 38px;
-  border: 1px solid #333333;
-  border-radius: 4px;
-  font-family: "IBM Plex Sans";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-  text-transform: uppercase;
-  color: #333333;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-}
-@media only screen and (max-width: 1440px) {
-  .buy__button {
-    padding: 1.181vw 2.639vw;
-    font-size: 1.25vw;
-    line-height: 1.736vw;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .buy__button {
-    padding: 4.722vw 10.556vw;
-    font-size: 4.444vw;
-    line-height: 6.111vw;
-  }
-}
-.buy__button:hover {
-  background: #333;
-  color: #fff;
-}
-
 .banner {
   background: -webkit-linear-gradient(25.72deg, #58A3C9 9.99%, #7EBFD8 50.62%, #6AB1CD 85.73%);
   background: linear-gradient(64.28deg, #58A3C9 9.99%, #7EBFD8 50.62%, #6AB1CD 85.73%);
@@ -1032,6 +894,144 @@ textarea:focus {
 }
 .button:hover {
   background: #12a131;
+}
+
+.buy__title {
+  margin-bottom: 23px;
+  font-family: "Bebas Neue Cyrillic";
+  font-size: 90px;
+  line-height: 80px;
+  text-align: center;
+  color: #FF6A80;
+}
+@media only screen and (max-width: 1440px) {
+  .buy__title {
+    margin-bottom: 1.597vw;
+    font-size: 6.25vw;
+    line-height: 5.556vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .buy__title {
+    font-size: 14.722vw;
+    line-height: 22.222vw;
+    margin-bottom: 0;
+  }
+}
+.buy__text {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 23px;
+}
+@media only screen and (max-width: 1440px) {
+  .buy__text {
+    font-size: 2.222vw;
+    line-height: 2.431vw;
+    margin-bottom: 1.597vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .buy__text {
+    font-size: 5.833vw;
+    line-height: 6.944vw;
+    margin-bottom: 10vw;
+  }
+}
+.buy__container {
+  background: #F0F0F0;
+  padding-top: 33px;
+  padding-bottom: 29px;
+}
+@media only screen and (max-width: 1440px) {
+  .buy__container {
+    padding-top: 2.292vw;
+    padding-bottom: 2.014vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .buy__container {
+    padding-top: 9.167vw;
+    padding-bottom: 7.778vw;
+  }
+}
+.buy__container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.buy__partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 46px;
+}
+@media only screen and (max-width: 1440px) {
+  .buy__partners {
+    margin-bottom: 3.194vw;
+  }
+  .buy__partners img {
+    width: 11.667vw;
+    height: 3.333vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .buy__partners {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .buy__partners img {
+    width: 41.667vw;
+    height: 11.667vw;
+    margin-bottom: 2.778vw;
+  }
+}
+.buy__button {
+  padding: 17px 38px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1440px) {
+  .buy__button {
+    padding: 1.181vw 2.639vw;
+    font-size: 1.25vw;
+    line-height: 1.736vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .buy__button {
+    padding: 4.722vw 10.556vw;
+    font-size: 4.444vw;
+    line-height: 6.111vw;
+  }
+}
+.buy__button:hover {
+  background: #333;
+  color: #fff;
 }
 
 .footer {
@@ -1527,6 +1527,10 @@ textarea:focus {
 }
 .mobile-menu > *:last-child {
   border-bottom: none;
+}
+
+body .fancybox__content {
+  padding: 0;
 }
 
 .privilege {
