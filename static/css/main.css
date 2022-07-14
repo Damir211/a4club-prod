@@ -1381,13 +1381,15 @@ textarea:focus {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+  border: 1px solid #58A3C9;
 }
 .popup__button[disabled] {
   opacity: 0.5;
   pointer-events: none;
 }
 .popup__button:hover {
-  background: #4598c3;
+  background: #fff;
+  color: #58A3C9;
 }
 @media only screen and (max-width: 650px) {
   .popup__button {

@@ -262,9 +262,9 @@
                     свяжитесь с нами
                 </div>
                 <div class="popup__body">
-                    <input type="text" placeholder="Введите имя" class="required">
-                    <input type="text" placeholder="Адрес электронной почты (Логин)" class="required">
-                    <textarea cols="30" rows="10" placeholder="Ваше сообщение" class="required"></textarea>
+                    <input type="text" name="name" placeholder="Введите имя" class="required">
+                    <input type="text" name="email" placeholder="Адрес электронной почты (Логин)" class="required">
+                    <textarea cols="30" name="message" rows="10" placeholder="Ваше сообщение" class="required"></textarea>
                 </div>
                 <div class="popup__button" disabled>
                     отправИть
@@ -284,19 +284,19 @@
                     вступить в клуб
                 </div>
                 <div class="popup__body">
-                    <input type="text" placeholder="Название компании" class="required">
-                    <input type="text" placeholder="ИНН" class="required">
-                    <input type="text" placeholder="Город" class="required">
-                    <input type="text" placeholder="Имя" class="required">
-                    <input type="text" placeholder="Фамилия" class="required">
-                    <input type="text" placeholder="E-mail" class="email-validate required">
-                    <input type="text" placeholder="Телефон" value="" class="tel required">
+                    <input type="text" name="companyname" placeholder="Название компании" class="required">
+                    <input type="text" name="inn" placeholder="ИНН" class="required">
+                    <input type="text" name="city" placeholder="Город" class="required">
+                    <input type="text" name="name" placeholder="Имя" class="required">
+                    <input type="text" name="surname" placeholder="Фамилия" class="required">
+                    <input type="text" name="email" placeholder="E-mail" class="email-validate required">
+                    <input type="text" name="tel" placeholder="Телефон" value="" class="tel required">
                     <label class="checkbox">
-                        <input type="checkbox" checked="" class="required">
+                        <input type="checkbox" name="politic" checked="" class="required">
                         <span>Подтверждаю, что я ознакомлен с <a href="#" data-document-src="docs/politic.pdf" data-type="iframe" data-fancybox>политикой конфиденциальности</a> и согласен на&nbsp;обработку персональных данных</span>
                     </label>
                     <label class="checkbox">
-                        <input type="checkbox" checked="" class="required">
+                        <input type="checkbox" name="mailsend" checked="" class="required">
                         <span>Я даю <a href="#" data-document-src="docs/politic.pdf" data-type="iframe" data-fancybox>согласие на получение рассылки</a> о&nbsp;предложениях, информации о продуктах/услугах и иной рекламной информации от&nbsp;ООО «РЕВОЛЮШН» ИНН 7716623513 путем отправки сообщений по всем указанным мною при регистрации каналам</span>
                     </label>
                 </div>
