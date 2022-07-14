@@ -119,7 +119,7 @@ function checkFields(arrElements, btn) {
 
 var pdfLinksArray = document.querySelectorAll('[data-document-src]');
 pdfLinksArray.forEach(function (item) {
-  var url = 'https://docs.google.com/viewerng/viewer?url=' + window.location.href + item.getAttribute('data-document-src');
+  var url = 'https://docs.google.com/viewerng/viewer?url=' + window.location.href + item.getAttribute('data-document-src') + '&embedded=true';
   item.setAttribute('href', url);
 });
 "use strict";
