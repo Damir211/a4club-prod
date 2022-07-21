@@ -1,5 +1,26 @@
 "use strict";
 
+function checkCookies() {
+  var cookieHtml = "\n    <div class=\"cookie show\" id=\"cookie\">\n        <div class=\"container\">\n            <div class=\"cookie__container\">\n                <div class=\"cookie__text\">\n                    \u0414\u043B\u044F \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F \u0440\u0430\u0431\u043E\u0442\u044B \u0441\u0430\u0439\u0442\u0430 \u0438 \u0435\u0433\u043E \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u0441 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F\u043C\u0438 \u043C\u044B \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C \u0444\u0430\u0439\u043B\u044B cookie. \u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0443 \u0441 \u0441\u0430\u0439\u0442\u043E\u043C, \u0412\u044B&nbsp;\u0440\u0430\u0437\u0440\u0435\u0448\u0430\u0435\u0442\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435 cookie-\u0444\u0430\u0439\u043B\u043E\u0432. \u0412\u044B \u0432\u0441\u0435\u0433\u0434\u0430 \u043C\u043E\u0436\u0435\u0442\u0435 \u043E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0444\u0430\u0439\u043B\u044B cookie \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445 \u0412\u0430\u0448\u0435\u0433\u043E \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430.\n                </div>\n                <div class=\"cookie__button\">\n                    \u041F\u0440\u0438\u043D\u044F\u0442\u044C\n                </div>\n            </div>\n        </div>\n    </div>\n    ";
+  var cookieDate = localStorage.getItem('cookieDate');
+  var cookieNotification = null;
+  var cookieBtn = null; // Если записи про кукисы нет или она просрочена на 1 год, то показываем информацию про кукисы
+
+  if (!cookieDate || +cookieDate + 31536000000 < Date.now()) {
+    document.body.insertAdjacentHTML('beforeend', cookieHtml);
+    cookieNotification = document.getElementById('cookie');
+    cookieBtn = cookieNotification.querySelector('.cookie__button'); // При клике на кнопку, в локальное хранилище записывается текущая дата в системе UNIX
+
+    cookieBtn.addEventListener('click', function () {
+      localStorage.setItem('cookieDate', Date.now());
+      cookieNotification.classList.remove('show');
+    });
+  }
+}
+
+checkCookies();
+"use strict";
+
 function popupClose() {
   document.querySelectorAll('.popup').forEach(function (item) {
     item.classList.remove('active');
