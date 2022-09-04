@@ -1378,6 +1378,29 @@ textarea:focus {
   display: none;
 }
 
+.header-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-btns > * {
+  margin-left: 24px;
+}
+
+.header__button.header__button-black {
+  background: #212121;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__button.header__button-black:hover {
+  background: #303030;
+}
+
+@media only screen and (max-width: 650px) {
+  .header .header__button.header__button-black {
+    display: none;
+  }
+}
 .popup {
   position: fixed;
   left: 0;
